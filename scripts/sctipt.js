@@ -20,7 +20,6 @@ function toggleTheme() {
       setTheme('theme-light');
       document.getElementById('slider').checked = false;
   } else {
-      // Установить темную тему по умолчанию
       setTheme('theme-dark');
       document.getElementById('slider').checked = true;
   }
@@ -35,3 +34,11 @@ function toggleTheme() {
         document.getElementById('slider').checked = false;
     }
 })();
+
+const burgerBtn = document.querySelector('.burger__menu'),
+      mobileMenu = document.querySelector('nav ul');
+
+burgerBtn.addEventListener('click', ()=>{
+  burgerBtn.classList.toggle('_active');
+  mobileMenu.classList.toggle('_active');
+})
