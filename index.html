@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Project</title>
+    <title>Timur Tulegaliyev</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
@@ -14,9 +14,33 @@
     <header>
         <div class="container">
             <div class="wrapper">
-                <div class="burger__menu">
-                    <span></span>
-                </div>
+                <a class="header_logo" href="#">
+                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.05 56.82">
+                        <g id="OBJECTS">
+                            <g>
+                                <path class="cls-1"
+                                    d="m70.38,51.48h-22.72c-1.99,0-3.6-1.61-3.6-3.6s1.61-3.6,3.6-3.6h22.72c1.99,0,3.6,1.61,3.6,3.6s-1.61,3.6-3.6,3.6Z">
+                                </path>
+                                <g>
+                                    <path class="cls-1"
+                                        d="m81.71,47.89c-.99,0-1.98-.41-2.69-1.21-1.32-1.49-1.18-3.76.31-5.08l11.45-10.15-11.45-10.15c-1.49-1.32-1.62-3.59-.31-5.08,1.32-1.49,3.59-1.62,5.08-.31l14.49,12.84c.77.68,1.21,1.66,1.21,2.69s-.44,2.01-1.21,2.69l-14.49,12.84c-.68.61-1.54.9-2.38.9Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="m36.34,47.89c-.85,0-1.7-.3-2.38-.9l-14.49-12.84c-.77-.68-1.21-1.66-1.21-2.69s.44-2.01,1.21-2.69l14.49-12.84c1.49-1.32,3.76-1.18,5.08.31,1.32,1.49,1.18,3.76-.31,5.08l-11.45,10.15,11.45,10.15c1.49,1.32,1.62,3.59.31,5.08-.71.8-1.7,1.21-2.69,1.21Z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path class="cls-1"
+                                        d="m14.07,56.82c-.57-.35-14.07-8.8-14.07-28.41S13.5.35,14.07,0l4.16,6.83h.02c-.42.25-10.26,6.61-10.26,21.58s9.84,21.33,10.26,21.6h-.02s-4.16,6.81-4.16,6.81Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="m103.97,56.82l-4.16-6.83h-.02c.42-.25,10.26-6.61,10.26-21.58s-9.84-21.33-10.26-21.6h.02s4.16-6.81,4.16-6.81c.57.35,14.07,8.8,14.07,28.41s-13.5,28.06-14.07,28.41Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
 
                 <nav>
                     <ul>
@@ -24,208 +48,194 @@
                         <li>Projects</li>
                         <li>Work Expirience</li>
                     </ul>
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider" checked>
+                        <span class="slider round"></span>
+                    </label>
                 </nav>
 
-                <div>
-                    <button class="header__btns">Hire me</button>
+                <div class="burger__menu">
+                    <span></span>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="section__about">
+    <div class="container">
+        <div class="section__about">
+            <div class="wrapper">
+                <picture>
+                    <source srcset="/images/avatar.webp 250w, /images/avatar.webp 375w" type="image/webp"
+                        sizes="(max-width: 991px) 250px, 375px">
+                    <img srcset="/images/avatar.webp 250w, /images/avatar.webp 375w"
+                        sizes="(max-width: 991px) 250px, 375px" src="/images/avatar.webp" alt="My simple avatar"
+                        width="250" height="250">
+                </picture>
+                <div class="text__model">
+                    <h1>Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа, <mark>а ещё и
+                            хобби!</mark></h1>
+                </div>
+
+                <div class="btns">
+                    <a href="" class="btn contact">Связаться</a>
+                    <a href="" class="btn cv">Скачать CV</a>
+                </div>
+
+                <div class="tech_stack">
+                    <h2>работаю с</h2>
+                    <ul>
+                        <li><img src="images/js.png" alt=""></li>
+                        <li><img src="images/html5.png" alt=""></li>
+                        <li><img src="images/css.png" alt=""></li>
+                        <li><img src="images/react.png" alt=""></li>
+                        <li><img src="images/laravel.svg" alt=""></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="skills_section wrapp">
+            <h2 class="title">Навыки</h2>
+            <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>SCSS</span></li>
+                <li><span>Styled-Components</span></li>
+                <li><span>Tailwindcss</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>TypeScript</span></li>
+                <li><span>React</span></li>
+                <li><span>Next.js</span></li>
+                <li><span>Solid.js</span></li>
+                <li><span>Redux</span></li>
+                <li><span>Effector</span></li>
+                <li><span>Webpack</span></li>
+                <li><span>Vite</span></li>
+                <li><span>Rollup</span></li>
+                <li><span>Gulp</span></li>
+                <li><span>Jest</span></li>
+                <li><span>React Testing Library</span></li>
+                <li><span>Cypress</span></li>
+                <li><span>Playwright</span></li>
+                <li><span>REST API</span></li>
+                <li><span>Formik</span></li>
+                <li><span>React Hook Form</span></li>
+                <li><span>Axios</span></li>
+                <li><span>AntD</span></li>
+                <li><span>MUI</span></li>
+                <li><span>Chakra UI</span></li>
+            </ul>
+        </div>
+
+        <div class="expirience wrapp">
+            <h2 class="title">Опыт Работы</h2>
+
+            <div class="expirience_item">
+                <div class="expirience_title">
+                    <div>
+                        <picture>
+                            <source srcset="images/rm-software.svg" type="image/svg">
+                            <img loading="lazy" src="images/rm-software.svg" alt="smile tech" width="32"
+                                height="32">
+                        </picture>
+                        <h2>Fullstack-разработчик в RM Software</h2>
+                    </div>
+
+                    <p>Апрель 2024 - настоящее время</p>
+                </div>
+
+                <h4>Обязанности:</h4>
+                <ul>
+                    <li>Участвовал в разработке 3-х проектов компании</li>
+                    <li>Разрабатывал UI-kit используемый для проектов компании</li>
+                    <li>Разрабатывал новый функционал проектов в связке с дизайнером и бэкэнд разработчиками</li>
+                    <li>Рефакторил и оптимизировал существующую кодовую базу</li>
+                    <li>Код ревью</li>
+                    <li>Писал тесты</li>
+                </ul>
+            </div>
+
+            <div class="expirience_item">
+                <div class="expirience_title">
+                    <div>
+                        <picture>
+                            <source srcset="images/smiletechprague_logo.jpeg" type="image/jpeg">
+                            <img loading="lazy" src="images/smiletechprague_logo.jpeg" alt="smile tech" width="32"
+                                height="32">
+                        </picture>
+                        <h2>Frontend-разработчик в SmileTech</h2>
+                    </div>
+
+                    <p>Апрель 2022 - настоящее время</p>
+                </div>
+
+                <h4>Обязанности:</h4>
+                <ul>
+                    <li>Участвовал в разработке 3-х проектов компании</li>
+                    <li>Разрабатывал UI-kit используемый для проектов компании</li>
+                    <li>Разрабатывал новый функционал проектов в связке с дизайнером и бэкэнд разработчиками</li>
+                    <li>Рефакторил и оптимизировал существующую кодовую базу</li>
+                    <li>Код ревью</li>
+                    <li>Писал тесты</li>
+                </ul>
+            </div>
+
+            <div class="expirience_item">
+                <div class="expirience_title">
+                    <div>
+                        <picture>
+                            <source srcset="images/freelance.webp" type="image/webp">
+                            <img loading="lazy" src="images/freelance.webp" alt="time" width="32"
+                                height="32">
+                        </picture>
+                        <h2>Frontend-разработчик на фрилансе</h2>
+                    </div>
+
+                    <p>Май 2020 - Апрель 2022</p>
+                </div>
+
+                <h4>Обязанности:</h4>
+                <ul>
+                    <li>Участвовал в разработке 3-х проектов компании</li>
+                    <li>Разрабатывал UI-kit используемый для проектов компании</li>
+                    <li>Разрабатывал новый функционал проектов в связке с дизайнером и бэкэнд разработчиками</li>
+                    <li>Рефакторил и оптимизировал существующую кодовую базу</li>
+                    <li>Код ревью</li>
+                    <li>Писал тесты</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
         <div class="container">
             <div class="wrapper">
-                <div class="text__model">
-                    <h1>Hello! I'm Timur Tulegaliyev</h1>
-                    <p>UI/UX Designer specializing in Shopify & Webflow.</p>
-                </div>
+                <h4>Связаться</h4>
 
-                <div class="social__links">
-                    <div class="social__item ">
-                        <img src="images/facebook.png" alt="">
-                    </div>
-                    <div class="social__item ">
-                        <img src="images/linkedin.png" alt="">
-                    </div>
-                    <div class="social__item ">
-                        <img src="images/git_social.png" alt="">
-                    </div>
-
-                    <div class="social__item ">
-                        <img src="images/telegram.png" alt="">
-                    </div>
-
-                </div>
-                <button>Get Resume</button>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="skills__section">
-        <div class="container">
-            <h1>Professional Skills</h1>
-            <div class="skills_model">
-                <div class="skill__list">
-                    <div class="skill__item left"><img src="images/html5.png" alt=""></div>
-                    <div class="skill__item left"><img src="images/css.png" alt=""></div>
-                    <div class="skill__item left"><img src="images/js.png" alt=""></div>
-                    <div class="skill__item left"><img src="images/react.png" alt=""></div>
-                    <div class="skill__item left"><img src="images/node.png" alt=""></div>
-                </div>
-
-                <div class="person_3d_model">
-                    <img src="images/person.png" alt="" class="levitate">
-                </div>
-
-                <div class="skill__list">
-                    <div class="skill__item right"><img src="images/jquery.png" alt=""></div>
-                    <div class="skill__item right"><img src="images/bootstrap.png" alt=""></div>
-                    <div class="skill__item right"><img src="images/git.png" alt=""></div>
-                    <div class="skill__item right"><img src="images/jira.png" alt=""></div>
-                    <div class="skill__item right"><img src="images/confluence.png" alt=""></div>
-                </div>
-
-                <div class="skills_descr">
-                    <div class="descr_item-left html">
-                        <p>HTML</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-left css">
-                        <p>CSS</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-left js">
-                        <p>JS</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-left react">
-                        <p>React</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-left node">
-                        <p>Node Js</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-right jquery">
-                        <p>Jquery</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-right bootstrap">
-                        <p>Bootstrap</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-right git">
-                        <p>Git</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-right jira">
-                        <p>Jira</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-        
-                    <div class="descr_item-right confluence">
-                        <p>Confluence</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-        <!--
-            <div class="bottom__skills">
-                <div class="skill__item "><img src="images/jquery.png" alt=""></div>
-                <div class="skill__item "><img src="images/bootstrap.png" alt=""></div>
-                <div class="skill__item "><img src="images/git.png" alt=""></div>
-            </div>
-        -->
-        </div>
-
-       
-    </div>
-
-    <div class="project__section">
-        <div class="container">
-            <h2>Pet projects</h2>
-
-            <div class="calculator" ondrop="dDrop()" ondragover="nDrop()">
-                <div class="wrapper">
-                    <div class="output">
-                        <input type="text" id="input">
-                    </div>
-                    <div class="divider"></div>
-                    <div class="operations">
-                        <div class="operations__item operator" id="clear">AC</div>
-                        <div class="operations__item operator" id="opposite">+/-</div>
-                        <div class="operations__item operator" id="percent">%</div>
-                        <div class="operations__item operator" id="devide">÷</div>
-                        <div class="operations__item operand">7</div>
-                        <div class="operations__item operand">8</div>
-                        <div class="operations__item operand">9</div>
-                        <div class="operations__item operator" id="multiply">*</div>
-                        <div class="operations__item operand">4</div>
-                        <div class="operations__item operand">5</div>
-                        <div class="operations__item operand">6</div>
-                        <div class="operations__item operator" id="minus">-</div>
-                        <div class="operations__item operand">1</div>
-                        <div class="operations__item operand">2</div>
-                        <div class="operations__item operand">3</div>
-                        <div class="operations__item operator" id="plus">+</div>
-                        <div class="operations__item operand">0</div>
-                        <div class="operations__item" id="comma">.</div>
-                        <div class="operations__item" id="equal">=</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="toDO">
-                <div class="container">
-                    <div id="wrapper">
-                        <input type="text" placeholder="Task to be done...">
-                        <button id="add-btn">Add</button>
-                    </div>
-                    <div id="tasks">
-                        <p id="pending-tasks">You have <span class="count-value">0</span> task (s) to complete</p>
-                    </div>
-                    <p id="error">Input cannot be empty</p>
-                </div>
-            </div>
-
-            <div class="noteBook">
-                <div class="container">
-                    <div class="wrapper">
-                        <div class="notes">
-
-                        </div>
-
-                        <div class="articles">
-
-                        </div>
-
-                        <div class="textArea">
-
-                        </div>
-                    </div>
+                <div class="info">
+                    <p>Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа, а ещё и хобби.
+                        Специализируюсь на React, знаком с Next.js, а также был небольшой опыт работы с Vue/Nuxt.</p>
+                    <a href="mailto:mrbelingtim@gmail.com" target="_blank">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.83719 3.09485H13.6693C14.3815 3.09485 14.9589 3.67219 14.9589 4.38439V12.1216C14.9589 12.8338 14.3815 13.4112 13.6693 13.4112H2.83719C2.125 13.4112 1.54765 12.8338 1.54765 12.1216V4.38439C1.54765 3.67219 2.125 3.09485 2.83719 3.09485Z"
+                                stroke="white" stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                            <path d="M12.8954 5.1582L8.25304 8.76891L3.6107 5.1582" stroke="white"
+                                stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </svg>
+                        <span class="sc-jsEeTM lkagfp">mrbelongtim@gmail.com</span>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <div class="mobile__menu">
-        <ul>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Work Expirience</li>
-        </ul>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="scripts/sctipt.js"></script>
 </body>
+
 </html>
