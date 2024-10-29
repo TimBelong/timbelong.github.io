@@ -1,0 +1,16 @@
+{
+    "ru": {
+        "intro": "Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа,",
+        "intro-mark": "а ещё и хобби!",
+        "skills": "Навыки",
+        "experience": "Опыт Работы",
+        "contact": "Связаться"
+    },
+    "en": {
+        "intro": "I've been working in front-end development for over 4 years, and for me,",
+        "intro-mark": "it's not just a job, but a hobby!",
+        "skills": "Skills",
+        "experience": "Work Experience",
+        "contact": "Contact"
+    }
+}

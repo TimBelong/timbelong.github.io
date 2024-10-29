@@ -54,6 +54,13 @@
                         <li><a href="#experience">Опыт</a></li>
                         <li><a href="#contact">Связаться</a></li>
                     </ul>
+                    <div class="language-switcher">
+    <button id="current-language">ru</button>
+    <div class="dropdown" style="display: none;">
+        <button data-lang="ru" style="display: none;">ru</button>
+        <button data-lang="en">en</button>
+    </div>
+</div>
                     <label id="switch" class="switch">
                         <input type="checkbox" onchange="toggleTheme()" id="slider" checked>
                         <span class="slider round"></span>
@@ -78,8 +85,9 @@
                         width="250" height="250">
                 </picture>
                 <div class="text__model">
-                    <h1>Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа, <mark>а ещё и
-                            хобби!</mark></h1>
+                    <h1 data-translate="intro">Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа, </h1>
+                    <p class="mark" data-translate="intro-mark">а ещё и хобби!</p>
+
                 </div>
 
                 <div class="btns">
@@ -102,7 +110,7 @@
         </div>
 
         <div class="skills_section wrapp" id="skills">
-            <h2 class="title">Навыки</h2>
+            <h2 class="title" data-translate="skills">Навыки</h2>
             <ul>
                 <li><span>HTML</span></li>
                 <li><span>CSS</span></li>
@@ -135,7 +143,7 @@
         </div>
 
         <div class="expirience wrapp" id="experience">
-            <h2 class="title">Опыт Работы</h2>
+            <h2 class="title" data-translate="experience">Опыт Работы</h2>
 
             <div class="expirience_item">
                 <div class="expirience_title">
@@ -217,8 +225,7 @@
     <footer id="contact">
         <div class="container">
             <div class="wrapper">
-                <h4>Связаться</h4>
-
+                <h4 data-translate="contact">Связаться</h4>
                 <div class="info">
                     <p>Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа, а ещё и хобби.
                         Специализируюсь на React, знаком с Next.js, а также был небольшой опыт работы с Vue/Nuxt.</p>
