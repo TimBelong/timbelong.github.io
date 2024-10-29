@@ -49,10 +49,10 @@
 
                 <nav>
                     <ul>
-                        <li><a href="">Интро</a></li>
-                        <li><a href="">Навыки</a></li>
-                        <li><a href="">Опыт</a></li>
-                        <li><a href="">Связаться</a></li>
+                        <li><a href="#intro">Интро</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+                        <li><a href="#experience">Опыт</a></li>
+                        <li><a href="#contact">Связаться</a></li>
                     </ul>
                     <label id="switch" class="switch">
                         <input type="checkbox" onchange="toggleTheme()" id="slider" checked>
@@ -68,7 +68,7 @@
     </header>
 
     <div class="container">
-        <div class="section__about">
+        <div class="section__about" id="intro">
             <div class="wrapper">
                 <picture>
                     <source srcset="/images/avatar.webp 250w, /images/avatar.webp 375w" type="image/webp"
@@ -84,7 +84,7 @@
 
                 <div class="btns">
                     <a href="" class="btn contact">Связаться</a>
-                    <a href="assets/Timur Tulegaliyev - CV.pdf"  target="_blank"  class="btn cv">Скачать CV</a>
+                    <a href="assets/Timur Tulegaliyev - CV.pdf" target="_blank" class="btn cv">Скачать CV</a>
                 </div>
 
                 <div class="tech_stack">
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="skills_section wrapp">
+        <div class="skills_section wrapp" id="skills">
             <h2 class="title">Навыки</h2>
             <ul>
                 <li><span>HTML</span></li>
@@ -134,7 +134,7 @@
             </ul>
         </div>
 
-        <div class="expirience wrapp">
+        <div class="expirience wrapp" id="experience">
             <h2 class="title">Опыт Работы</h2>
 
             <div class="expirience_item">
@@ -142,8 +142,7 @@
                     <div>
                         <picture>
                             <source srcset="images/rm-software.svg" type="image/svg">
-                            <img loading="lazy" src="images/rm-software.svg" alt="smile tech" width="32"
-                                height="32">
+                            <img loading="lazy" src="images/rm-software.svg" alt="smile tech" width="32" height="32">
                         </picture>
                         <h2>Fullstack-разработчик в RM Software</h2>
                     </div>
@@ -167,7 +166,8 @@
                     <div>
                         <picture>
                             <source srcset="images/smiletechprague_logo.jpeg" type="image/jpeg">
-                            <img loading="lazy" src="images/smiletechprague_logo.jpeg" alt="smile tech" width="32" height="32">
+                            <img loading="lazy" src="images/smiletechprague_logo.jpeg" alt="smile tech" width="32"
+                                height="32">
                         </picture>
                         <h2>Frontend-разработчик в SmileTech</h2>
                     </div>
@@ -214,7 +214,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="wrapper">
                 <h4>Связаться</h4>
@@ -226,7 +226,7 @@
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2.83719 3.09485H13.6693C14.3815 3.09485 14.9589 3.67219 14.9589 4.38439V12.1216C14.9589 12.8338 14.3815 13.4112 13.6693 13.4112H2.83719C2.125 13.4112 1.54765 12.8338 1.54765 12.1216V4.38439C1.54765 3.67219 2.125 3.09485 2.83719 3.09485Z"
-                                stroke="white" stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round" >
+                                stroke="white" stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
                             </path>
                             <path d="M12.8954 5.1582L8.25304 8.76891L3.6107 5.1582" stroke="white"
                                 stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
