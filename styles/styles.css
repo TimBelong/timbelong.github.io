@@ -54,7 +54,7 @@
     --premium-bg: hsl(190 95% 44%);
     --gradient-start-dark: #fff;
     --gradient-end-dark: red;
-    --gradient-icon: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+;
 }
 
 html,
@@ -478,24 +478,13 @@ input:checked+.slider:before {
     transition: transform 0.3s ease;
 }
 
-.tech_stack ul li:last-of-type {
-    width: 40px;
-    height: 40px;
-}
-
-.tech_stack ul li img {
+.tech_stack ul li svg {
     width: 100%;
     height: 100%;
 }
 
 .tech_stack ul li:hover {
     transform: scale(1.3);
-}
-
-.tech_stack ul li img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
 }
 
 /*SKILLS*/

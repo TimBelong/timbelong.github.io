@@ -18,15 +18,34 @@ document.addEventListener('DOMContentLoaded', async () => {
         themeSlider.checked = newTheme === THEME_DARK;
     }
 
-    // Set initial theme on page load
+    const darkThemeColors = { start: '#fcfcfc', end: '#fcfcfc', endOpacity: 0.18 };
+    const lightThemeColors = { start: '#161513', end: '#161513', endOpacity: 0.18 };
+
+    function updateGradientColors() {
+        const theme = localStorage.getItem('theme');
+        const colors = theme === THEME_DARK ? darkThemeColors : lightThemeColors;
+
+        document.querySelectorAll('#paint_linear_dark stop').forEach((stop, index) => {
+            stop.setAttribute('stop-color', index === 0 ? colors.start : colors.end);
+            if (index === 1) stop.setAttribute('stop-opacity', colors.endOpacity);
+        });
+
+        document.querySelectorAll('#paint_linear_light stop').forEach((stop, index) => {
+            stop.setAttribute('stop-color', index === 0 ? colors.start : colors.end);
+            if (index === 1) stop.setAttribute('stop-opacity', colors.endOpacity);
+        });
+    }
+
     (function initializeTheme() {
         const savedTheme = localStorage.getItem('theme') || THEME_DARK;
         setTheme(savedTheme);
         themeSlider.checked = savedTheme === THEME_DARK;
     })();
 
-    // Add event listener to the theme slider for toggling theme
-    themeSlider.addEventListener('change', toggleTheme);
+    themeSlider.addEventListener('change', ()=>{
+        toggleTheme();
+        updateGradientColors();
+    });
 
     // Mobile menu toggle
     const burgerBtn = document.querySelector('.burger__menu');
@@ -101,4 +120,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             dropdown.style.display = 'none';
         }
     });
+
+    updateGradientColors();
 });
