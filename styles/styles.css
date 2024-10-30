@@ -177,7 +177,7 @@ header .wrapper {
     position: absolute;
     top: 100%;
     left: -10px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8);
     min-width: 60px;
     display: none;
     z-index: 1;
