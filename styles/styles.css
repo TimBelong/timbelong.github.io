@@ -354,6 +354,7 @@ input:checked+.slider:before {
 
 .mark {
     font-size: 3rem;
+    line-height: 3.2rem;
     background: linear-gradient(to right, rgb(255, 134, 97), rgb(153, 51, 255)) text;
     color: transparent;
     font-weight: 800;
@@ -432,6 +433,7 @@ input:checked+.slider:before {
     transition: 0.2s ease-in-out;
     border: 0.2rem solid var(--text-color);
     color: var(--text-color);
+    text-align: center;
 }
 
 .btn.contact {
@@ -756,8 +758,9 @@ footer .info a svg path{
         padding: 0 2rem;
     }
     .text__model h1,
-    .text__model h1 mark{
+    .text__model .mark{
         font-size: 2.2rem;
+        line-height: 2.5rem;
     }
     
     .tech_stack,
@@ -805,8 +808,9 @@ footer .info a svg path{
         display: block;
     }
 
-    .text__model h1, .text__model h1 mark {
+    .text__model h1, .text__model .mark {
         font-size: 1.9rem;
+        line-height: 2.2rem;
     }
 
     .section__about .wrapper{
@@ -859,8 +863,9 @@ footer .info a svg path{
         height: 40px;
     }
 
-    .text__model h1, .text__model h1 mark {
+    .text__model h1, .text__model .mark {
         font-size: 1.5725rem;
+        line-height: 1.8rem;
     }
 }
 
@@ -880,8 +885,9 @@ footer .info a svg path{
         gap: 10px;
     }
 
-    .text__model h1, .text__model h1 mark {
+    .text__model h1, .text__model .mark {
         font-size: 1.4rem;
+        line-height: 1.6rem;
     }
 }
 
