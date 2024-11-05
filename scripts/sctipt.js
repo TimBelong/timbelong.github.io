@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Initialize translations
     await loadTranslations();
-    setLanguage('ru'); // Default language
+    setLanguage('en'); // Default language
 
     // Elements for current language button and dropdown
     const currentLangButton = document.getElementById('current-language');
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         currentLangButton.innerText = selectedLang;
         
         // Display only the opposite language in the dropdown
-        if (selectedLang === 'ru') {
+        if (selectedLang === 'en') {
             ruButton.style.display = 'none';
             enButton.style.display = 'block';
         } else {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Initial setup to show only the opposite language in the dropdown
-    updateLanguageOptions('ru');
+    updateLanguageOptions('en');
 
     // Language selection and dropdown close
     dropdown.querySelectorAll('button').forEach(button => {
