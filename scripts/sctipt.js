@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         currentLangButton.innerText = selectedLang;
         
         // Display only the opposite language in the dropdown
-        if (selectedLang === 'en') {
+        if (selectedLang === 'ru') {
             ruButton.style.display = 'none';
             enButton.style.display = 'block';
         } else {
