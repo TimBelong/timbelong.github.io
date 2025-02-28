@@ -32,6 +32,7 @@
         "freelance-responsibility-3": "Разрабатывал многостраничные сайты и лендинги на чистом HTML/CSS/JS",
         "freelance-responsibility-4": "Занимался рефакторингом и оптимизацией уже существующих проектов",
         "freelance-responsibility-5": "Переводил старые сайты с jquery на современный HTML/CSS/JavaScript",
+        "freelance-responsibility-6": "Разрабатывал сложные веб-приложений, включая интернет-магазины с каталогами, корзиной и системой оплаты на PHP/Laravel - переведи на английский",
         "responsibilities": "Обязанности",
         "contact": "Связаться",
         "contact-info": "Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не просто работа, а ещё и хобби. Специализируюсь на React, знаком с Next.js, а также есть опыт работы как Fullstack-разработчик на Laravel."
@@ -69,6 +70,7 @@
         "freelance-responsibility-3": "Developed multi-page websites and landing pages using pure HTML/CSS/JS",
         "freelance-responsibility-4": "Refactored and optimized existing projects",
         "freelance-responsibility-5": "Migrated older sites from jQuery to modern HTML/CSS/JavaScript",
+        "freelance-responsibility-6": "Developed complex web applications, including online stores with catalogs, shopping carts, and payment systems using PHP/Laravel.",
         "responsibilities": "Responsibilities",
         "contact": "Contact",
         "contact-info": "I've been working in front-end development for over 4 years, and for me, it's not just a job but a hobby. I specialize in React, have experience with Next.js, and have also worked as a Fullstack developer using Laravel."

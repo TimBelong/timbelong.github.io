@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         themeSlider.checked = savedTheme === THEME_DARK;
     })();
 
-    themeSlider.addEventListener('change', ()=>{
+    themeSlider.addEventListener('change', () => {
         toggleTheme();
         updateGradientColors();
     });
@@ -59,65 +59,63 @@ document.addEventListener('DOMContentLoaded', async () => {
     let translations = {};
 
     async function loadTranslations() {
-        const response = await fetch('lang/en.json');
+        const response = await fetch(`lang/en.json`); // Загружаем общий файл
         translations = await response.json();
     }
 
     function setLanguage(lang) {
-      document.querySelectorAll('[data-translate]').forEach(element => {
-          const key = element.getAttribute('data-translate');
-          if (translations[lang][key]) {
-              element.innerText = translations[lang][key];
-          }
-      });
-  }
+        localStorage.setItem("lang", lang);
+        document.documentElement.setAttribute("lang", lang);
 
-    // Initialize translations
-    await loadTranslations();
-    setLanguage('en'); // Default language
+        document.querySelectorAll("[data-translate]").forEach(element => {
+            const key = element.getAttribute("data-translate");
+            if (translations[lang] && translations[lang][key]) {
+                element.innerText = translations[lang][key];
+            }
+        });
 
-    // Elements for current language button and dropdown
-    const currentLangButton = document.getElementById('current-language');
-    const dropdown = document.querySelector('.language-switcher .dropdown');
-    const ruButton = dropdown.querySelector('[data-lang="ru"]');
-    const enButton = dropdown.querySelector('[data-lang="en"]');
-
-    // Show dropdown on current language button click
-    currentLangButton.addEventListener('click', () => {
-        dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
-    });
-
-    // Update language and dropdown options on selection
-    function updateLanguageOptions(selectedLang) {
-        currentLangButton.innerText = selectedLang;
-        
-        // Display only the opposite language in the dropdown
-        if (selectedLang === 'ru') {
-            ruButton.style.display = 'none';
-            enButton.style.display = 'block';
-        } else {
-            ruButton.style.display = 'block';
-            enButton.style.display = 'none';
+        // Обновляем ссылку на CV
+        let cvLink = document.getElementById("cvLink");
+        if (cvLink) {
+            cvLink.href = `assets/Cv-${lang === "ru" ? "RU" : "EN"}.pdf`;
         }
     }
 
-    // Initial setup to show only the opposite language in the dropdown
-    updateLanguageOptions('en');
+    // Получаем сохранённый язык или ставим по умолчанию "ru"
+    const savedLang = localStorage.getItem("lang") || "ru";
+    await loadTranslations();
+    setLanguage(savedLang);
 
-    // Language selection and dropdown close
-    dropdown.querySelectorAll('button').forEach(button => {
-        button.addEventListener('click', () => {
-            const selectedLang = button.getAttribute('data-lang');
+    // Language switcher
+    const currentLangButton = document.getElementById("current-language");
+    const dropdown = document.querySelector(".language-switcher .dropdown");
+    const ruButton = dropdown.querySelector('[data-lang="ru"]');
+    const enButton = dropdown.querySelector('[data-lang="en"]');
+
+    currentLangButton.addEventListener("click", () => {
+        dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    });
+
+    function updateLanguageOptions(selectedLang) {
+        currentLangButton.innerText = selectedLang.toUpperCase(); // Отображение RU / EN
+        ruButton.style.display = selectedLang === "ru" ? "none" : "block";
+        enButton.style.display = selectedLang === "en" ? "none" : "block";
+    }
+
+    updateLanguageOptions(savedLang);
+
+    dropdown.querySelectorAll("button").forEach(button => {
+        button.addEventListener("click", async () => {
+            const selectedLang = button.getAttribute("data-lang");
             setLanguage(selectedLang);
             updateLanguageOptions(selectedLang);
-            dropdown.style.display = 'none'; // Hide dropdown after selection
+            dropdown.style.display = "none";
         });
     });
 
-    // Hide dropdown if clicked outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.language-switcher')) {
-            dropdown.style.display = 'none';
+    document.addEventListener("click", (e) => {
+        if (!e.target.closest(".language-switcher")) {
+            dropdown.style.display = "none";
         }
     });
 
