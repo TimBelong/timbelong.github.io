@@ -4,8 +4,8 @@
         "menu-skills": "Навыки",
         "menu-exp": "Опыт",
         "menu-contact": "Связаться",
-        "intro": "Занимаюсь Web-разработкой уже более 5 лет, и для меня это не просто работа,",
-        "intro-mark": "а ещё и хобби!",
+        "intro": " с 5+ летним опытом создания современных веб-решений",
+        "intro-mark": "Fullstack-разработчик",
         "btn-contact": "Связаться",
         "btn-cv": "Скачать CV",
         "tech-stack": "РАБОТАЮ С",
@@ -41,15 +41,15 @@
         "freelance-responsibility-6": "Разработка сложных веб-приложений, включая интернет-магазины с каталогами, корзиной и системой оплаты на PHP/Laravel",
         "responsibilities": "Обязанности",
         "contact": "Связаться",
-        "contact-info": "Занимаюсь веб-разработкой уже более 5 лет, и для меня это не просто работа, а ещё и хобби. Специализируюсь на Laravel/React, знаком с Livewire, также имею опыт раб. Также использую MySQL/PostgreSQL, Sanctum/Passport, Spatie Permission, Docker и GitHub Actions"
+        "contact-info": "Fullstack-разработчик с опытом более 5 лет. Специализируюсь на создании веб-приложений с Laravel и React. Работаю с Vue.js, Livewire, MySQL/PostgreSQL, Docker и современными инструментами разработки."
     },
     "en": {
         "menu-intro": "Intro",
         "menu-skills": "Skills",
         "menu-exp": "Experience",
         "menu-contact": "Contact",
-        "intro": "I've been working in web-development for over 6 years, and for me,",
-        "intro-mark": "it's not just a job, but a hobby!",
+        "intro": " with 5+ years of experience creating modern web solutions",
+        "intro-mark": "Fullstack Developer",
         "btn-contact": "Contact",
         "btn-cv": "Download CV",
         "tech-stack": "TECH STACK",
@@ -85,6 +85,6 @@
         "freelance-responsibility-6": "Development of complex web applications, including online stores with catalogs, shopping carts, and payment systems using PHP/Laravel",
         "responsibilities": "Responsibilities",
         "contact": "Contact",
-        "contact-info": "I've been working in web development for over 5 years, and for me it's not just a job but also a hobby. I specialize in Laravel and React, am familiar with Livewire, and I also use MySQL/PostgreSQL, Sanctum/Passport, Spatie Permission, Docker, and GitHub Actions."
+        "contact-info": "Fullstack developer with over 5 years of experience. I specialize in building web applications with Laravel and React. I work with Vue.js, Livewire, MySQL/PostgreSQL, Docker, and modern development tools."
     }
 }

@@ -20,30 +20,16 @@
         <div class="container">
             <div class="wrapper">
                 <a class="header_logo" href="#">
-                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.05 56.82">
-                        <g id="OBJECTS">
-                            <g>
-                                <path class="cls-1"
-                                    d="m70.38,51.48h-22.72c-1.99,0-3.6-1.61-3.6-3.6s1.61-3.6,3.6-3.6h22.72c1.99,0,3.6,1.61,3.6,3.6s-1.61,3.6-3.6,3.6Z">
-                                </path>
-                                <g>
-                                    <path class="cls-1"
-                                        d="m81.71,47.89c-.99,0-1.98-.41-2.69-1.21-1.32-1.49-1.18-3.76.31-5.08l11.45-10.15-11.45-10.15c-1.49-1.32-1.62-3.59-.31-5.08,1.32-1.49,3.59-1.62,5.08-.31l14.49,12.84c.77.68,1.21,1.66,1.21,2.69s-.44,2.01-1.21,2.69l-14.49,12.84c-.68.61-1.54.9-2.38.9Z">
-                                    </path>
-                                    <path class="cls-1"
-                                        d="m36.34,47.89c-.85,0-1.7-.3-2.38-.9l-14.49-12.84c-.77-.68-1.21-1.66-1.21-2.69s.44-2.01,1.21-2.69l14.49-12.84c1.49-1.32,3.76-1.18,5.08.31,1.32,1.49,1.18,3.76-.31,5.08l-11.45,10.15,11.45,10.15c1.49,1.32,1.62,3.59.31,5.08-.71.8-1.7,1.21-2.69,1.21Z">
-                                    </path>
-                                </g>
-                                <g>
-                                    <path class="cls-1"
-                                        d="m14.07,56.82c-.57-.35-14.07-8.8-14.07-28.41S13.5.35,14.07,0l4.16,6.83h.02c-.42.25-10.26,6.61-10.26,21.58s9.84,21.33,10.26,21.6h-.02s-4.16,6.81-4.16,6.81Z">
-                                    </path>
-                                    <path class="cls-1"
-                                        d="m103.97,56.82l-4.16-6.83h-.02c.42-.25,10.26-6.61,10.26-21.58s-9.84-21.33-10.26-21.6h.02s4.16-6.81,4.16-6.81c.57.35,14.07,8.8,14.07,28.41s-13.5,28.06-14.07,28.41Z">
-                                    </path>
-                                </g>
-                            </g>
-                        </g>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 60">
+                        <defs>
+                            <linearGradient id="terminal-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--accent-gradient-start);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:var(--accent-gradient-end);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="5" y="10" width="70" height="40" rx="6" stroke="url(#terminal-gradient)" stroke-width="3" fill="none"/>
+                        <polyline points="15,25 25,30 15,35" stroke="url(#terminal-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <line x1="35" y1="35" x2="55" y2="35" stroke="url(#terminal-gradient)" stroke-width="3" stroke-linecap="round"/>
                     </svg>
                 </a>
 
@@ -78,21 +64,21 @@
         <div class="section__about" id="intro">
             <div class="wrapper">
                 <picture>
-                    <source srcset="/images/Avatar2x-BVRbqmLw.webp 250w, /images/Avatar2x-BVRbqmLw.webp 375w"
+                    <source srcset="/images/avatar.jpg 250w, /images/avatar.jpg 375w"
                         type="image/webp" sizes="(max-width: 991px) 250px, 375px">
-                    <img srcset="/images/Avatar2x-BVRbqmLw.webp 250w, /images/Avatar2x-BVRbqmLw.webp 375w"
-                        sizes="(max-width: 991px) 250px, 375px" src="/images/Avatar2x-BVRbqmLw.webp"
+                    <img srcset="/images/Avatar2x-BVRbqmLw.webp 250w, /images/avatar.jpg 375w"
+                        sizes="(max-width: 991px) 250px, 375px" src="/images/avatar.jpg"
                         alt="My simple avatar" width="250" height="250">
                 </picture>
                 <div class="text__model">
-                    <h1 data-translate="intro">Занимаюсь Web-разработкой уже более 5 лет, и для меня это не просто
-                        работа, </h1>
-                    <p class="mark" data-translate="intro-mark">а ещё и хобби!</p>
-
+                    <h1>
+                        <span class="mark" data-translate="intro-mark">Fullstack-разработчик</span>
+                        <span data-translate="intro"> с 5+ летним опытом создания современных веб-решений</span>
+                    </h1>
                 </div>
 
                 <div class="btns">
-                    <a href="#intro" class="btn contact" data-translate="btn-contact">Связаться</a>
+                    <a href="https://t.me/Timbelong" target="_blank" class="btn contact" data-translate="btn-contact">Связаться</a>
                     <a id="cvLink" href="assets/Cv-EN.pdf" target="_blank" class="btn cv"
                         data-translate="btn-cv">Скачать CV</a>
                 </div>
@@ -107,13 +93,13 @@
                             <img src="images/laravel.svg" alt="laravel">
                         </li>
                         <li>
-                            <img src="images/react.png" alt="rea">
+                            <img src="images/react.png" alt="react">
                         </li>
                         <li>
-                            <img src="images/html5.png" alt="">
+                            <img src="images/vue.png" alt="vue">
                         </li>
                         <li>
-                            <img src="images/css.png" alt="">
+                            <img src="images/Livewire.png" alt="livewire">
                         </li>
                     </ul>
                 </div>
@@ -126,18 +112,11 @@
                 <li><span>HTML</span></li>
                 <li><span>CSS</span></li>
                 <li><span>SCSS</span></li>
-                <li><span>Styled-Components</span></li>
                 <li><span>Tailwindcss</span></li>
                 <li><span>JavaScript</span></li>
                 <li><span>JQuery</span></li>
-                <li><span>TypeScript</span></li>
+                <li><span>Vue</span></li>
                 <li><span>React</span></li>
-                <li><span>Formik</span></li>
-                <li><span>React Hook Form</span></li>
-                <li><span>Axios</span></li>
-                <li><span>AntD</span></li>
-                <li><span>MUI</span></li>
-                <li><span>Chakra UI</span></li>
                 <li><span>Webpack</span></li>
                 <li><span>Vite</span></li>
                 <li><span>React Testing Library</span></li>
@@ -147,6 +126,9 @@
                 <li><span>Livewire</span></li>
                 <li><span>MySQL</span></li>
                 <li><span>Postgresql</span></li>
+                <li><span>Docker</span></li>
+                <li><span>GitHub Actions</span></li>
+                <li><span>Git</span></li>
             </ul>
         </div>
 
@@ -239,21 +221,27 @@
             <div class="wrapper">
                 <h4 data-translate="contact">Связаться</h4>
                 <div class="info">
-                    <p data-translate="contact-info"> Занимаюсь фронтенд-разработкой уже более 4 лет, и для меня это не
-                        просто работа, а ещё и хобби.
-                        Специализируюсь на React, знаком с Next.js, а также был небольшой опыт работы с Vue/Nuxt.</p>
-                    <a href="mailto:mrbelingtim@gmail.com" target="_blank">
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.83719 3.09485H13.6693C14.3815 3.09485 14.9589 3.67219 14.9589 4.38439V12.1216C14.9589 12.8338 14.3815 13.4112 13.6693 13.4112H2.83719C2.125 13.4112 1.54765 12.8338 1.54765 12.1216V4.38439C1.54765 3.67219 2.125 3.09485 2.83719 3.09485Z"
-                                stroke="white" stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                            <path d="M12.8954 5.1582L8.25304 8.76891L3.6107 5.1582" stroke="white"
-                                stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
-                            </path>
-                        </svg>
-                        <span>mrbelongtim@gmail.com</span>
-                    </a>
+                    <p data-translate="contact-info">Fullstack-разработчик с опытом более 5 лет. Специализируюсь на создании веб-приложений с Laravel и React. Работаю с Vue.js, Livewire, MySQL/PostgreSQL, Docker и современными инструментами разработки.</p>
+                    <div class="contact-links">
+                        <a href="mailto:mrbelongtim@gmail.com" target="_blank">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.83719 3.09485H13.6693C14.3815 3.09485 14.9589 3.67219 14.9589 4.38439V12.1216C14.9589 12.8338 14.3815 13.4112 13.6693 13.4112H2.83719C2.125 13.4112 1.54765 12.8338 1.54765 12.1216V4.38439C1.54765 3.67219 2.125 3.09485 2.83719 3.09485Z"
+                                    stroke="white" stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M12.8954 5.1582L8.25304 8.76891L3.6107 5.1582" stroke="white"
+                                    stroke-width="0.884256" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <span>mrbelongtim@gmail.com</span>
+                        </a>
+                        <a href="https://t.me/Timbelong" target="_blank">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 8.8C16.49 10.38 15.84 14.22 15.51 15.99C15.37 16.74 15.09 16.99 14.83 17.02C14.25 17.07 13.81 16.64 13.25 16.27C12.37 15.69 11.87 15.33 11.02 14.77C10.03 14.12 10.67 13.76 11.24 13.18C11.39 13.03 13.95 10.7 14 10.49C14.0069 10.4582 14.006 10.4252 13.9973 10.3938C13.9886 10.3624 13.9724 10.3337 13.95 10.31C13.89 10.26 13.81 10.28 13.74 10.29C13.65 10.31 12.25 11.24 9.52 13.08C9.12 13.35 8.76 13.48 8.44 13.47C8.08 13.46 7.4 13.27 6.89 13.11C6.26 12.92 5.77 12.82 5.81 12.47C5.83 12.29 6.08 12.11 6.55 11.92C9.47 10.63 11.41 9.79 12.38 9.39C15.16 8.23 15.73 8.03 16.11 8.03C16.19 8.03 16.38 8.05 16.5 8.15C16.6 8.23 16.63 8.34 16.64 8.42C16.63 8.48 16.65 8.66 16.64 8.8Z" fill="white"/>
+                            </svg>
+                            <span>@Timbelong</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
