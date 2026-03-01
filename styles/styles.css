@@ -679,6 +679,14 @@ input:checked+.slider:before {
     border: 1px solid var(--border-color);
 }
 
+.expirience_title img.expirience_logo_wide {
+    width: auto;
+    max-width: 90px;
+    height: 32px;
+    object-fit: contain;
+    object-position: left center;
+}
+
 .expirience_title h2 {
     font-size: 1.375rem;
     font-weight: 600;
